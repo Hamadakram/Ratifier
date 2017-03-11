@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RATIFIER"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sample"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <com.irozon.ratifier.RatifierEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:emptyMessage="Enter email"
+        app:invalidMessage="Enter valid email"
+        app:required="true" />
+
+    <com.irozon.ratifier.RatifierEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:emptyMessage="Enter Password"
+        app:invalidMessage="Password must be more than 4 digits"
+        app:minCharacters="4"
+        app:required="true" />
+
+    <com.irozon.ratifier.RatifierEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        app:emptyMessage="Enter repeat Password"
+        app:invalidMessage="Password mismatch"
+        app:minCharacters="4"
+        app:required="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="signInClick"
+        android:text="Sign Up" />
+
+</LinearLayout>
