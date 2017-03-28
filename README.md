@@ -2,6 +2,7 @@
 # Ratifier
 Ratifier is a form validation library for Android.
 ![alt tag](https://raw.githubusercontent.com/Hamadakram/Ratifier/master/app/logo.jpeg)
+![](https://github.com/Hamadakram/Ratifier/blob/master/app/screencast.gif)
 ## Download
 Grab via Gradle:
 ```
